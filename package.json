@@ -1,0 +1,20 @@
+{
+  "name": "fidelity-top-orders",
+  "version": "1.0.0",
+  "description": "Daily history of Fidelity top orders.",
+  "main": "./src/index.js",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cheerio": "^1.0.0-rc.10",
+    "dotenv": "^16.0.2",
+    "knex": "^2.3.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Juho Nieminen",
+  "license": "MIT"
+}
