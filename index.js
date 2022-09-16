@@ -1,10 +1,10 @@
 require("dotenv").config();
 const ordersService = require("./src/top30Service");
-const scrape = require("./src/scrape");
+const api = require("./src/fetchOrders");
 
 async function main() {
   try {
-    const data = await scrape.scrapeTop30();
+    const data = await api.getTopOrders();
     await ordersService.insertTop30Rows(data);
     process.exit(0);
   } catch (err) {

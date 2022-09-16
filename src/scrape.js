@@ -1,8 +1,14 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 
+/*
+  2022-09-16
+  Looks like Fidelity changed the page from which orders are fetched.
+  The page only displays 6 first symbols now, so fetching them from 
+  the API directly is the better method.
+*/
+
 const url =
-  process.env.ORDERS_URL ||
   "https://eresearch.fidelity.com/eresearch/gotoBL/fidelityTopOrders.jhtml";
 
 const scrapeTop30 = async () => {

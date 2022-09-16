@@ -7,7 +7,7 @@ const insertTop30Rows = async (data) => {
     return;
   }
   try {
-    await knex(TABLE).insert(data).onConflict(["symbol", "date"]).ignore();
+    await knex(TABLE).insert(data).onConflict(["symbol", "date"]).merge();
   } catch (err) {
     console.error("Error inserting top30 rows", err);
   }
