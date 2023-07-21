@@ -2,6 +2,10 @@
 
 Node program to fetch [Top 30 Orders by Fidelity Customers](https://eresearch.fidelity.com/eresearch/gotoBL/fidelityTopOrders.jhtml) and write them into a database table.
 
+## NOTICE!
+
+Fidelity has removed the top orders from their page. As of now, this script does not work.
+
 ## Requirements
 
 - Node 12+
